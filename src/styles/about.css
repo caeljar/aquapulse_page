@@ -1,0 +1,6 @@
+.about .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center}
+.vals{list-style:none;margin:0;padding:0;display:grid;gap:1rem}
+.vals li{padding:1.1rem 1.3rem;border-left:6px solid var(--coral);background:var(--sky);border-radius:0 18px 18px 0;transition:transform .3s}
+.vals li:hover{transform:translateX(8px)}
+.vals b{display:block;font:700 1.15rem Fraunces,serif;color:var(--blue)}
+@media(max-width:800px){.about .wrap{grid-template-columns:1fr}}

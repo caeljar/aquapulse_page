@@ -1,0 +1,6 @@
+.gal{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1rem;margin-top:1.8rem}
+.ph{aspect-ratio:4/3;border-radius:22px;position:relative;overflow:hidden;display:grid;place-items:center;text-align:center;padding:1rem;font-weight:700;color:var(--blue);background:linear-gradient(135deg,#cfe3f3,#a6c9e6)}
+.ph:first-child{grid-row:span 1}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,#ffffff88 50%,transparent 70%);transform:translateX(-100%);animation:shine 4.5s ease-in-out infinite}
+@keyframes shine{60%,100%{transform:translateX(100%)}}
+@media(max-width:700px){.gal{grid-template-columns:1fr}}

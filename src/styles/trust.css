@@ -1,0 +1,5 @@
+.trust{padding:1.6rem 0 0}
+.trust ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;text-align:center}
+.trust li{padding:1rem;border:1px solid var(--line);border-radius:18px;line-height:1.35}
+.trust b{display:block;font:700 1.35rem Fraunces,serif;color:var(--blue)}
+@media(max-width:700px){.trust ul{grid-template-columns:1fr}}

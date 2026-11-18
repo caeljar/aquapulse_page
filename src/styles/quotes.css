@@ -1,0 +1,8 @@
+.q{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
+blockquote{margin:0;padding:1.6rem;border-radius:24px;background:#ffffff14;border:1px solid #ffffff30;transition:transform .3s,background .3s}
+blockquote:hover{transform:translateY(-6px);background:#ffffff22}
+blockquote footer{margin-top:.8rem;font-size:.92rem;color:#c7d9ef;font-weight:700}
+.g{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin-top:2rem}
+.g b{font:700 2.2rem Fraunces,serif;color:#ffd36b}
+.navy .btn-o{color:#fff}
+@media(max-width:800px){.q{grid-template-columns:1fr}}
