@@ -1,12 +1,81 @@
-.sky{background:var(--sky)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2rem}
-.card{background:#fff;border-radius:24px;padding:1.8rem;display:flex;flex-direction:column;border:1px solid var(--line);transition:transform .35s,box-shadow .35s;position:relative}
-.card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(20,51,95,.15)}
-.card .age{font:700 .85rem Figtree,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--coral)}
-.card p{flex:1}
-.price{font:700 1.4rem Fraunces,serif;color:var(--blue);margin:0 0 .2rem}
-.meta{font-size:.92rem;opacity:.8;margin-bottom:1rem}
-.card.feat{background:var(--navy);color:#fff;border-color:var(--navy)}
-.card.feat .age{color:#ffb199}.card.feat .price{color:#fff}
-.tag{position:absolute;top:-14px;right:18px;background:var(--coral);color:#fff;padding:.3rem .9rem;border-radius:99px;font-weight:700;font-size:.85rem}
-@media(max-width:900px){.cards{grid-template-columns:1fr}}
+.sky {
+    background: var(--sky)
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.4rem;
+    margin-top: 2rem
+}
+
+.card {
+    background: #fff;
+    border-radius: 24px;
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+    transition: transform .35s ease, box-shadow .35s ease, opacity .7s ease;
+    position: relative
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(20, 51, 95, .15)
+}
+
+.card .age {
+    font: 700 .85rem Figtree, sans-serif;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--coral)
+}
+
+.card p {
+    flex: 1
+}
+
+.price {
+    font: 700 1.4rem Fraunces, serif;
+    color: var(--blue);
+    margin: 0 0 .2rem
+}
+
+.meta {
+    font-size: .92rem;
+    opacity: .8;
+    margin-bottom: 1rem
+}
+
+.card.feat {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy)
+}
+
+.card.feat .age {
+    color: #ffb199
+}
+
+.card.feat .price {
+    color: #fff
+}
+
+.tag {
+    position: absolute;
+    top: -14px;
+    right: 18px;
+    background: var(--coral);
+    color: #fff;
+    padding: .3rem .9rem;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: .85rem
+}
+
+@media(max-width:900px) {
+    .cards {
+        grid-template-columns: 1fr
+    }
+}

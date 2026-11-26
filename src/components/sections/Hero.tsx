@@ -19,7 +19,7 @@ export default function Hero() {
           <span className="pill"><b>★ {site.rating.value}</b> · {site.rating.count} opiniones en Google</span>
         </div>
         <aside className="ticket" aria-label="Clase muestra gratuita">
-          <span className="eyebrow">PRIMERA VEZ EN EL CLUB</span>
+          <span className="eyebrow">¿PRIMERA VEZ EN EL CLUB?</span>
           <b>Clase muestra gratuita</b>
           <p>Conoce la alberca, al equipo y el programa ideal para ti o tu familia, sin compromiso.</p>
           <Button href="#contacto">Reservar mi lugar</Button>

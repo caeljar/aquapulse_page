@@ -1,2 +1,11 @@
-.js .rv{opacity:0;transform:translateY(28px);transition:opacity .7s,transform .8s cubic-bezier(.2,.8,.2,1);transition-delay:calc(var(--i,0)*110ms)}
-.js .rv.in{opacity:1;transform:none}
+:where(.js .rv) {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s, transform .8s cubic-bezier(.2, .8, .2, 1);
+    transition-delay: calc(var(--i, 0)*110ms)
+}
+
+:where(.js .rv.in) {
+    opacity: 1;
+    transform: none
+}

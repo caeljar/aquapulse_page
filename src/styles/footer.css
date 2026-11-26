@@ -1,4 +1,42 @@
-footer.site{background:#0d2347;color:#cfdcf0;padding:2.2rem 0;font-size:.95rem}
-footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}
-.wa{position:fixed;right:16px;bottom:16px;z-index:30;animation:ring 3s infinite}
-@keyframes ring{0%{box-shadow:0 0 0 0 rgba(232,83,47,.6)}70%,100%{box-shadow:0 0 0 20px rgba(232,83,47,0)}}
+footer.site {
+    background: #0d2347;
+    color: #cfdcf0;
+    padding: 2.2rem 0;
+    font-size: .95rem
+}
+
+footer.site .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem
+}
+
+.wa {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 30;
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    animation: ring 3s infinite
+}
+
+.wa img {
+    width: 1.25rem;
+    height: 1.25rem;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+@keyframes ring {
+    0% {
+        box-shadow: 0 0 0 0 rgba(232, 83, 47, .6)
+    }
+
+    70%,
+    100% {
+        box-shadow: 0 0 0 1rem rgba(232, 83, 47, 0)
+    }
+}

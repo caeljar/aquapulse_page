@@ -1,25 +1,157 @@
-:root{--navy:#14335f;--blue:#1d4b8f;--coral:#e8532f;--sky:#eaf2fa;--ink:#14233c;--line:#d5e2f0;
---wave:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Cpath d='M0 30Q37.5 0 75 30T150 30V60H0Z'/%3E%3C/svg%3E")}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{margin:0;font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;margin:0 0 .5em;letter-spacing:-.01em}
-h1{font-size:clamp(2.3rem,5.6vw,4.2rem)}
-h2{font-size:clamp(1.8rem,3.8vw,2.7rem)}
-h2::before{content:"";display:block;width:68px;height:8px;border-radius:8px;margin-bottom:.9rem;background:repeating-linear-gradient(90deg,var(--coral) 0 12px,var(--blue) 12px 24px);animation:rope 3s linear infinite}
-.navy h2::before{background:repeating-linear-gradient(90deg,var(--coral) 0 12px,#fff 12px 24px)}
-@keyframes rope{to{background-position:24px 0}}
-h3{font-size:1.3rem}
-p{margin:0 0 1em;max-width:62ch}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
-.wrap{width:min(1120px,92%);margin-inline:auto;position:relative}
-section{padding:clamp(3.5rem,7vw,5.5rem) 0}
-.btn{display:inline-block;padding:.85rem 1.6rem;border-radius:999px;font:700 1.02rem Figtree,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(20,51,95,.25)}
-.btn-c{background:var(--coral);color:#fff}.btn-c:hover{background:#d8431f}
-.btn-o{border-color:currentColor}
-.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:.5rem 1rem;z-index:99}
+:root {
+    --navy: #14335f;
+    --blue: #1d4b8f;
+    --coral: #e8532f;
+    --sky: #eaf2fa;
+    --ink: #14233c;
+    --line: #d5e2f0;
+    --wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 60'%3E%3Cpath d='M0 30Q37.5 0 75 30T150 30V60H0Z'/%3E%3C/svg%3E")
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 76px;
+}
+
+body {
+    margin: 0;
+    font: 400 1.0625rem/1.65 Figtree, system-ui, sans-serif;
+    color: var(--ink);
+    background: #fff;
+    overflow-x: hidden
+}
+
+h1,
+h2,
+h3 {
+    font-family: Fraunces, Georgia, serif;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 .5em;
+    letter-spacing: -.01em
+}
+
+h1 {
+    font-size: clamp(2.3rem, 5.6vw, 4.2rem)
+}
+
+h2 {
+    font-size: clamp(1.8rem, 3.8vw, 2.7rem)
+}
+
+h2::before {
+    content: "";
+    display: block;
+    width: 68px;
+    height: 8px;
+    border-radius: 8px;
+    margin-bottom: .9rem;
+    background: linear-gradient(90deg, var(--coral) 50%, var(--blue) 0) 0 0 / 24px 100%;
+    animation: rope 2s linear infinite
+}
+
+.navy h2::before {
+    background-image: linear-gradient(90deg, var(--coral) 50%, #fff 0)
+}
+
+@keyframes rope {
+    to {
+        background-position: 24px 0
+    }
+}
+
+h3 {
+    font-size: 1.3rem
+}
+
+p {
+    margin: 0 0 1em;
+    max-width: 62ch
+}
+
+a {
+    color: inherit
+}
+
+:focus-visible {
+    outline: 3px solid var(--coral);
+    outline-offset: 3px
+}
+
+.wrap {
+    width: min(1120px, 92%);
+    margin-inline: auto;
+    position: relative
+}
+
+section {
+    padding: clamp(3.5rem, 7vw, 5.5rem) 0
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .45rem;
+    padding: .85rem 1.6rem;
+    border-radius: 999px;
+    font: 700 1.02rem Figtree, sans-serif;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform .25s, box-shadow .25s, background .25s
+}
+
+.btn:hover {
+    /*transform: translateY(-2px);*/
+    box-shadow: 0 10px 22px rgba(20, 51, 95, .25)
+}
+
+.btn-c {
+    background: var(--coral);
+    color: #fff
+}
+
+.btn-c:hover {
+    background: #d8431f
+}
+
+.btn-o {
+    border-color: currentColor
+}
+
+.btn img {
+    width: 1.25rem;
+    height: 1.25rem;
+    filter: brightness(0) invert(1);
+    display: block
+}
+
+.btn-o:hover {
+    background: var(--coral);
+    color: #fff
+}
+
+.skip {
+    position: absolute;
+    left: -999px
+}
+
+.skip:focus {
+    left: 8px;
+    top: 8px;
+    background: #fff;
+    padding: .5rem 1rem;
+    z-index: 99
+}
 
 
-section.pt-s{padding-top:2rem}
+section.pt-s {
+    padding-top: 2rem
+}
