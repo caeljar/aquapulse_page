@@ -30,12 +30,14 @@ summary::-webkit-details-marker {
 }
 
 summary h3 {
+    max-width: 80%;
     margin: 0;
     font-size: 1.12rem
 }
 
 summary::after {
     content: "\25BC";
+
     width: 2rem;
     height: 2rem;
     border-radius: 100%;
